@@ -30,6 +30,11 @@ while True:
         print("Warning: Overstock limit exceeded!\n")
         break
 
+print(f"total inventory: {total_inventory}")
+print(f"Total processed entries: {processed_entries}")
+print(f"Total rejected entries: {rejected_entries}")
+
+
 
 
 
