@@ -6,10 +6,22 @@ overstock_limit = 0 #treshold alert
 print("Enter stock quantity per delivery or type 'quit'")
 
 while True:
-    user_input = input("Stock quantity: ").strip()
+    user_input = input("Stock quantity: ").strip() #remove whitespace
     if user_input.lower() == 'quit':
-        print("\nInvalid")
+        print("\nInvalid") #\n makes a newline
         break
+
+    if not user_input.isdigit(): #returns true only for positive whole numbers
+        print("Invalid input, Skipping.\n")
+        rejected_entries += 1
+        continue
+
+
+
+
+
+
+
 
 
     
