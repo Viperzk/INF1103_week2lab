@@ -16,7 +16,11 @@ while True:
         rejected_entries += 1
         continue
 
-
+    quantity = int(user_input)
+    if quantity < 0:
+     print("Invalid input, Skipping.\n")
+     rejected_entries += 1
+     continue
 
 
 
