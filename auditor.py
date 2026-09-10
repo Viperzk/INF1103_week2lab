@@ -1,7 +1,7 @@
 total_inventory = 0
 processed_entries = 0
 rejected_entries = 0
-overstock_limit = 0 #treshold alert
+overstock_limit = 500 #treshold alert
 
 print("Enter stock quantity per delivery or type 'quit'")
 
@@ -18,14 +18,16 @@ while True:
 
     quantity = int(user_input)
     if quantity < 0:
-     print("Invalid input, Skipping.\n")
-     rejected_entries += 1
-     continue
+        print("Invalid input, Skipping.\n")
+        rejected_entries += 1
+        continue
 
     total_inventory += quantity
     processed_entries += 1
     print(f"Current total inventory: {total_inventory}") #f replaces variables in the string
-    
+
+
+
 
 
 
