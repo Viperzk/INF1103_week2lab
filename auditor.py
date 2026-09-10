@@ -26,7 +26,9 @@ while True:
     processed_entries += 1
     print(f"Current total inventory: {total_inventory}") #f replaces variables in the string
 
-
+    if total_inventory > overstock_limit:
+        print("Warning: Overstock limit exceeded!\n")
+        break
 
 
 
