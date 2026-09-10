@@ -22,6 +22,11 @@ while True:
      rejected_entries += 1
      continue
 
+    total_inventory += quantity
+    processed_entries += 1
+    print(f"Current total inventory: {total_inventory}") #f replaces variables in the string
+    
+
 
 
 
